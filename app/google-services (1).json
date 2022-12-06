@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "50468544540",
+    "firebase_url": "https://quizzly-a756d-default-rtdb.firebaseio.com",
+    "project_id": "quizzly-a756d",
+    "storage_bucket": "quizzly-a756d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50468544540:android:b23e3696321aff52353fd9",
+        "android_client_info": {
+          "package_name": "com.example.quizapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50468544540-4ga69v316tvpr1mtvjbbrd4li56at5ac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTsS5Bdom8eXRJU5zYRkI9PF6rY6EUFus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50468544540-4ga69v316tvpr1mtvjbbrd4li56at5ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

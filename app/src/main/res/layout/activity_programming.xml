@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#151640"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#35567B"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:id="@+id/img_math"
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/science" />
+
+                <TextView
+                    android:id="@+id/tit_math"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="C Programming"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/ico_cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="#35567B"
+                    android:src="@drawable/ic_cross" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tit_quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="Quiz : 10"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tit_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="Time : 10min"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tit_q1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="1. Which of these is NOT a relational or logical operator ?"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:checked="false"
+                            android:text="="
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="||"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="=="
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="!="
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tit_ans1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Answer: "
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tit_q2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="2. Out of the following, which one is not valid as an if-else statement ?"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:checked="false"
+                            android:text="if ((char) x){}"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="if (x){}"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="if (func1 (x)){}"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="if (if (x == 1)){}"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tit_ans2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Answer: "
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tit_q3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="3. The global variables are ____________"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:checked="false"
+                            android:text="External"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="Internal"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="Both External and Internal"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="None of the above"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tit_ans3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Answer: "
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tit_q4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="4. The #include stdio.h is a ______________"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:checked="false"
+                            android:text="Inclusion directive"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="File inclusion directive"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="Preprocessor directive"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="None of the above"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tit_ans4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Answer: "
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rd5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tit_q5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="6. The definition of the function abort() is in which header file ?"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:checked="false"
+                            android:text="stdlib.h"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="assert.h"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="stdio.h"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rb20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/round_radio_btn"
+                            android:buttonTint="@color/white"
+                            android:text="stdarg.h"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tit_ans5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Answer: "
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_corners"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_trophy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/trophy" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tit_congrats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/tit_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Score"
+                            android:textStyle="bold"
+                            android:textColor="#21B753"
+                            android:textSize="35dp" />
+
+                        <TextView
+                            android:id="@+id/tit_completed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text="Quiz completed successfully."
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/tit_quizquries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <Button
+                        android:id="@+id/submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_btn"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

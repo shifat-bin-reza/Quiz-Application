@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="round_radio_btn">round_radio_btn.xml</string>
+</resources>
